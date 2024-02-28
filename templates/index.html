@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slot Machine Game</title>
+    <link rel="stylesheet" href="/static/styles.css"> <!-- Updated href to the correct path -->
+</head>
+<body>
+    <div class="container"> <!-- Start of container div -->
+        <div class="header">
+            <div class="title">Slot-Machine</div>
+            <div class="balance-info">
+                <div>Player balance: $<span id="playerBalance">0</span></div>
+                <div>Wallet balance: $<span id="walletBalance">1000</span></div>
+            </div>
+        </div>
+        
+        <div class="slot-container">
+            <div class="slot">7</div>
+            <div class="slot">7</div>
+            <div class="slot">7</div>
+        </div>
+        
+        <div class="controls">
+            <div class="control-group">
+                <label for="linesSelect">Select number of lines</label>
+                <select id="linesSelect">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="betInput">Bets per line</label>
+                <input type="number" id="betInput" min="1" value="1">
+            </div>
+        </div>
+        
+        <button id="spinButton">SPIN</button>
+        
+        <div class="cash-buttons">
+            <button id="addCash">Add cash</button>
+            <button id="cashOut">Cashout</button>
+        </div>
+    </div> <!-- End of container div -->
+    
+    <script src="/static/script.js"></script> <!-- Updated src to the correct path -->
+</body>
+</html>
