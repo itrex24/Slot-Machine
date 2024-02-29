@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Slot Machine Game</title>
-    <link rel="stylesheet" href="/static/styles.css"> <!-- Updated href to the correct path -->
+    <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
-    <div class="container"> <!-- Start of container div -->
+    <div class="container">
         <div class="header">
             <div class="title">Slot-Machine</div>
             <div class="balance-info">
-                <div>Player balance: $<span id="playerBalance">0</span></div>
-                <div>Wallet balance: $<span id="walletBalance">1000</span></div>
+                <div>Player balance: £<span id="playerBalance">0</span></div>
+                <div>Wallet balance: £<span id="walletBalance">1000</span></div>
             </div>
         </div>
         
@@ -42,8 +42,12 @@
             <button id="addCash">Add cash</button>
             <button id="cashOut">Cashout</button>
         </div>
-    </div> <!-- End of container div -->
-    
-    <script src="/static/script.js"></script> <!-- Updated src to the correct path -->
+        
+        <div class="restart">
+            <button id="resetGame">Reset Game</button>
+        </div>
+    </div>
+    </div>
+    <script type="module" src="/static/Javascript/script.js"></script>
 </body>
 </html>

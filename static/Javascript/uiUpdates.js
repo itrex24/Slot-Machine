@@ -1,7 +1,6 @@
-// uiUpdates.js
-export const uiUpdates = (() => {
-    const showAlert = (message) => {/* Implementation */};
-    const updateUIElements = () => {/* Implementation */};
+// This might initially seem redundant but is planned for future UI operations.
+import { updateBalances } from './balanceManager.js';
 
-    return { showAlert, updateUIElements };
-})();
+export function showAlert(message) {
+    alert(message);
+}

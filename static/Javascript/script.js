@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    let playerBalance = 0; // Player balance starts at $0
-    let walletBalance = 1000; // Start with $1000 in the wallet balance
+    let playerBalance = 0; // Player balance starts at £0
+    let walletBalance = 1000; // Start with £1000 in the wallet balance
 
     // Update the UI with the current balances
     const updateBalances = () => {
@@ -10,6 +10,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // Initially update the balances
     updateBalances();
+
+    function resetGame() {
+        playerBalance = 0; // Reset player balance to £1000
+        walletBalance = 1000; // Optionally reset the wallet balance if needed
+        updateBalances(); // Call this function to update the UI with the new balances
+    }    
+    document.getElementById('resetGame').addEventListener('click', resetGame);
+
 
     // Add cash button event
     document.getElementById('addCash').addEventListener('click', () => {
